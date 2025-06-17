@@ -24,7 +24,7 @@ const Calculator = () => {
         }
         if((!firstOperand && !secondOperand) && (val == '-' || val == '+' || val == '*' || val == '/' || val == '=')) {
           // alert('Please enter the input..')
-          setInput('Error');
+          setResult('Error');
           return;
         }
         if(operator) {
