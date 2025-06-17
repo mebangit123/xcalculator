@@ -22,6 +22,10 @@ const Calculator = () => {
           setResult('');
           return;
         }
+        if((!firstOperand && !secondOperand) && (val == '-' || val == '+' || val == '*' || val == '/' || val == '=')) {
+          alert('Please enter the input..')
+          return;
+        }
         if(operator) {
           setSecondOperand(prev => prev + val);
         } else {
