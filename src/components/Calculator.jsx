@@ -23,7 +23,8 @@ const Calculator = () => {
           return;
         }
         if((!firstOperand && !secondOperand) && (val == '-' || val == '+' || val == '*' || val == '/' || val == '=')) {
-          alert('Please enter the input..')
+          // alert('Please enter the input..')
+          setInput('Error');
           return;
         }
         if(operator) {
